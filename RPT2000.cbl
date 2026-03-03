@@ -80,18 +80,17 @@
            05  HL1-YEAR        PIC 9(4).
            05  FILLER          PIC X(16)   VALUE SPACE.
            05  FILLER     PIC X(25)   VALUE "YEAR-TO-DATE SALES REPORT".
-           05  FILLER          PIC X(19)   VALUE "           PAGE: ".
+           05  FILLER          PIC X(23) VALUE SPACE.
+           05  FILLER          PIC X(6)   VALUE "PAGE: ".
            05  HL1-PAGE-NUMBER PIC ZZZ9.
-           05  FILLER          PIC X(55)   VALUE SPACE.
 
        01  HEADING-LINE-2. 
            05  FILLER          PIC X(7)    VALUE "TIME:  ".
            05  HL2-HOURS       PIC 9(2).
            05  FILLER          PIC X(1)    VALUE ":".
            05  HL2-MINUTES     PIC 9(2).
-           05  FILLER          PIC X(57)   VALUE SPACE.
-           05  FILLER          PIC X(10)   VALUE "RPT2000".
-           05  FILLER          PIC X(45)   VALUE SPACE.
+           05  FILLER          PIC X(72)   VALUE SPACE.
+           05  FILLER          PIC X(7)   VALUE "RPT2000".
 
        01  HEADING-LINE-3.
            05  FILLER PIC X(20) VALUE "BRANCH SALES CUST   ".
@@ -237,6 +236,8 @@
            MOVE HEADING-LINE-1 TO PRINT-AREA.
            WRITE PRINT-AREA.
            MOVE HEADING-LINE-2 TO PRINT-AREA.
+           WRITE PRINT-AREA.
+           MOVE SPACES TO PRINT-AREA.
            WRITE PRINT-AREA.
            MOVE HEADING-LINE-3 TO PRINT-AREA.
            WRITE PRINT-AREA.
