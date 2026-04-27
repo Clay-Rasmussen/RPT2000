@@ -7,20 +7,21 @@ The **RPT2000** program is an enhanced COBOL reporting tool. It serves as a data
 
 Building upon the foundations of its predecessor (RPT1000), this version introduces comparative financial analytics by calculating the variance between current and previous year sales performance.
 
-### Key Functionalities
-* **Data Transformation:** Processes raw record data, including branch numbers, sales representative IDs, and customer names.
-* **Comparative Analytics:** Calculates the **Change Amount** (Current YTD - Last YTD) and the **Change Percent** for every customer.
-* **Grand Totals:** Aggregates all individual customer metrics to provide a final summary of total company performance.
-* **Automated Formatting:** Features a dynamic page-breaking system, standardized headers with real-time date/time stamps, and clean visual separators using COBOL `ALL` clauses.
-
 ## Table of Contents
 ___
+* [New Concepts](#new-concepts)
 * [Tech Stack](#tech-stack)
 * [Installation](#installation)
 * [Running Output](#running-output)
 * [Learning Outcomes](#learning-outcomes)
 * [Help](#help)
 * [Authors](#authors)
+
+### New Concepts
+* **Data Transformation:** Processes raw record data, including branch numbers, sales representative IDs, and customer names.
+* **Comparative Analytics:** Calculates the **Change Amount** (Current YTD - Last YTD) and the **Change Percent** for every customer.
+* **Grand Totals:** Aggregates all individual customer metrics to provide a final summary of total company performance.
+* **Automated Formatting:** Features a dynamic page-breaking system, standardized headers with real-time date/time stamps, and clean visual separators using COBOL `ALL` clauses.
 
 ## Tech Stack
 ___
